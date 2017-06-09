@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.cinemarkbulgaria"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="19" />
+    <permission
+        android:name="com.android.cinemarkbulgaria.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature"></permission>
+    <uses-permission
+        android:name="com.android.cinemarkbulgaria.permission.MAPS_RECEIVE"/>
+    <uses-permission
+        android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+<uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"/>
+<uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cinemark"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme" >
+        <activity
+            android:name="com.android.cinemarkbulgaria.Homepage"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.android.cinemarkbulgaria.MainActivity"></activity>
+        <activity android:name="com.android.cinemarkbulgaria.About"></activity>
+      	<activity android:name="com.android.cinemarkbulgaria.CityList"></activity>
+      	<activity android:name="com.android.cinemarkbulgaria.TheaterList"></activity>
+      	<activity android:name="com.android.cinemarkbulgaria.BY_GPSList"></activity>
+      	<activity android:name="com.android.cinemarkbulgaria.Top10List"></activity>
+      	<activity android:name="com.android.cinemarkbulgaria.NowShowingList"></activity>
+      	<activity android:name="com.android.cinemarkbulgaria.Upcoming_ReleasesList"></activity>
+      	<activity android:name="com.android.cinemarkbulgaria.Week_ReleasesList"></activity>
+      	<activity android:name="com.android.cinemarkbulgaria.Google_Map"></activity>
+      	<activity android:name="com.android.cinemarkbulgaria.MapList"></activity>
+      	<activity android:name="com.android.cinemarkbulgaria.DataBaseList"></activity>
+      	<activity android:name="com.android.cinemarkbulgaria.Top_10db"></activity>
+      	<activity android:name="com.android.cinemarkbulgaria.Week_Releasesdb"></activity>
+      	<activity android:name="com.android.cinemarkbulgaria.NowShowing_db"></activity>
+      	<meta-data
+          android:name="com.google.android.gms.version"
+          android:value="@integer/google_play_services_version" />
+        <meta-data
+     android:name="com.google.android.maps.v2.API_KEY"
+     android:value="AIzaSyDR-MhzXieZXAzHT_IUGlIIT0i5uSBN5HM" />
+    </application>
+
+</manifest>

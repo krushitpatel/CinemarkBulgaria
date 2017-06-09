@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Cinemark Bulgaria</string>
+	<string name="home">Home</string>
+	<string name="cinemas">Cinemas</string>
+	<string name="movies">Movies</string>
+	<string name="buy">Buy</string>
+	<string name="about">About</string>
+</resources>
